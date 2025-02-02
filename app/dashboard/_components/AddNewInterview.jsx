@@ -89,25 +89,25 @@ function AddNewInterview() {
                                 <br />
                                 <span className='mt-7 my-3 block'>
                                     <label>Job Role/Position</label>
-                                    <Input placeholder='Ex. Full Stack Developer' required value={jobPosition} onChange={(event) => setJobPosition(event.target.value)} />
+                                    <Input placeholder='Ex. Full Stack Developer' required  onChange={(event) => setJobPosition(event.target.value)} />
                                 </span>
                                 <span className='my-3 block'>
                                     <label>Job Description/Tech Stack</label>
-                                    <Textarea placeholder='Ex. React , Angular , NodeJs, Mysql etd' value={jobDesc}
+                                    <Textarea placeholder='Ex. React , Angular , NodeJs, Mysql etd' 
                                      onChange={(event) => setJobDesc(event.target.value)} />
                                        
                                 </span>
 
                                 <span className='my-3 block'>
                                     <label>Years of Exp</label>
-                                    <Input placeholder='5' type='number' value={jobExp} onChange={(event) => setJobExp(event.target.value)} />
+                                    <Input placeholder='5' type='number' onChange={(event) => setJobExp(event.target.value)} />
                                 </span>
                             </span>
                             <span className='flex gap-5 justify-end'>
                                 <Button variant='ghost' onClick={() => setOpenDialog(false)}>Cancel</Button>
                                 <Button type='submit' disabled={loading} onClick={() => onSubmit()}>
                                     {loading ?
-                                        <><LoaderCircle className='animate-spin' />'Generating from AI'</> : "Start Interview"}
+                                        <><LoaderCircle className='animate-spin' />Generating from AI</> : "Start Interview"}
                                 </Button>
                             </span>
                             {/* </form> */}

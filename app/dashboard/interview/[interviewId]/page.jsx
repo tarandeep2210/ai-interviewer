@@ -35,9 +35,9 @@ function Interview({ params }) {
 
                 <div className='flex flex-col my-5 gap-5 '>
                     <div className='flex flex-col gap-5 p-5 rounder-lg border'>
-                    <h2 className='text-xl font-bold'><strong>Job Role/Job Position: </strong>{interviewDetails?.jobPosition}</h2>
-                    <h2 className='text-xl font-bold'><strong>Job Description: </strong>{interviewDetails?.jobDescription}</h2>
-                    <h2 className='text-xl font-bold'><strong>Job Experience: </strong>{interviewDetails?.jobExperience}</h2>
+                    <h2 className='text-lg font-medium'><strong>Job Role/Job Position: </strong>{interviewDetails?.jobPosition.toUpperCase()}</h2>
+                    <h2 className='text-lg font-medium'><strong>Job Description: </strong>{interviewDetails?.jobDescription.toUpperCase()}</h2>
+                    <h2 className='text-lg font-medium'><strong>Job Experience: </strong>{interviewDetails?.jobExperience}</h2>
                     </div>
                     <div className='p-5 rounded-lg border border-yellow-300 bg-yellow-200'>
                         <h2 className='flex items-center gap-2'><Lightbulb className='h-10 w-10' /><strong>Information</strong></h2>
